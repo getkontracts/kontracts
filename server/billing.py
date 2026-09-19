@@ -3,6 +3,7 @@ import hashlib
 import hmac
 import json
 from fastapi import HTTPException
+from urllib.parse import urlencode
 from . import config, plans
 from .db import db, now, packed, audit
 from .security import token, digest
@@ -57,10 +58,28 @@ def checkout(shop_id, plan_id=None):
                 c.execute('DELETE FROM billing_intents WHERE shop_id=?',(shop_id,))
                 c.execute('DELETE FROM billing_plan_intents WHERE shop_id=?',(shop_id,))
         price=checked_price(plan_id)
-        customer=s['paddle_customer']
+        customer = s['paddle_customer']
         if not customer:
-            customer=payments.paddle('/customers',{'email':s['email'],'name':s['name']})['id']
-            with db(True) as c:c.execute('UPDATE shops SET paddle_customer=? WHERE id=?',(customer,shop_id))
+            existing = payments.paddle(
+                '/customers?' + urlencode({'email': s['email']}),
+                method='GET'
+            )
+            if existing:
+                customer = existing[0]['id']
+            else:
+                customer = payments.paddle(
+                    '/customers',
+                    {
+                        'email': s['email'],
+                        'name': s['name']
+                    }
+                )['id']
+
+            with db(True) as c:
+                c.execute(
+                    'UPDATE shops SET paddle_customer=? WHERE id=?',
+                    (customer, shop_id)
+                )
         result=payments.paddle('/transactions',{'items':[{'price_id':price,'quantity':1}],
             'customer_id':customer,'collection_mode':'automatic',
             'custom_data':{'shop_id':shop_id,'binding':binding(shop_id,customer)},
