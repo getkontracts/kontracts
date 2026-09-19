@@ -1,0 +1,12 @@
+.env
+.env.*
+data
+backups
+.venv
+.git
+.pytest_cache
+**/__pycache__
+**/*.pyc
+screenshots
+tests
+preview

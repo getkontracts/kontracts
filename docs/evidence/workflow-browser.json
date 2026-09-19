@@ -1,0 +1,17 @@
+{
+  "result": "passed",
+  "backend": "real TestClient handlers with temporary SQLite",
+  "flows": [
+    "owner finish/sign",
+    "PDF retrieval",
+    "email-code outbox",
+    "customer signature",
+    "completed job"
+  ],
+  "browser_errors": [],
+  "not_tested": [
+    "live email/payment",
+    "HTTPS/cookies/CSP",
+    "actual file navigation"
+  ]
+}

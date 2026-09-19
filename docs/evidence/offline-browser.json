@@ -1,0 +1,104 @@
+{
+  "mode": "set_content offline sandbox; not deployed HTTPS or actual file navigation",
+  "signature_simulation": "passed",
+  "page_errors": [],
+  "external_requests": [],
+  "routes": [
+    {
+      "width": 1440,
+      "route": "/",
+      "horizontal_overflow": false,
+      "title": "Kontracts - Your work, beautifully organized."
+    },
+    {
+      "width": 1440,
+      "route": "/how-payments-work",
+      "horizontal_overflow": false,
+      "title": "Kontracts - Your work, beautifully organized."
+    },
+    {
+      "width": 1440,
+      "route": "/app",
+      "horizontal_overflow": false,
+      "title": "Kontracts - Your work, beautifully organized."
+    },
+    {
+      "width": 1440,
+      "route": "/app/bookings",
+      "horizontal_overflow": false,
+      "title": "Kontracts - Your work, beautifully organized."
+    },
+    {
+      "width": 1440,
+      "route": "/app/invoices",
+      "horizontal_overflow": false,
+      "title": "Kontracts - Your work, beautifully organized."
+    },
+    {
+      "width": 1440,
+      "route": "/app/billing",
+      "horizontal_overflow": false,
+      "title": "Kontracts - Your work, beautifully organized."
+    },
+    {
+      "width": 1440,
+      "route": "/app/settings",
+      "horizontal_overflow": false,
+      "title": "Kontracts - Your work, beautifully organized."
+    },
+    {
+      "width": 1440,
+      "route": "/book/northline",
+      "horizontal_overflow": false,
+      "title": "Northline Auto Care | Book a detail"
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "horizontal_overflow": false,
+      "title": "Kontracts - Your work, beautifully organized."
+    },
+    {
+      "width": 390,
+      "route": "/how-payments-work",
+      "horizontal_overflow": false,
+      "title": "Kontracts - Your work, beautifully organized."
+    },
+    {
+      "width": 390,
+      "route": "/app",
+      "horizontal_overflow": false,
+      "title": "Kontracts - Your work, beautifully organized."
+    },
+    {
+      "width": 390,
+      "route": "/app/bookings",
+      "horizontal_overflow": false,
+      "title": "Kontracts - Your work, beautifully organized."
+    },
+    {
+      "width": 390,
+      "route": "/app/invoices",
+      "horizontal_overflow": false,
+      "title": "Kontracts - Your work, beautifully organized."
+    },
+    {
+      "width": 390,
+      "route": "/app/billing",
+      "horizontal_overflow": false,
+      "title": "Kontracts - Your work, beautifully organized."
+    },
+    {
+      "width": 390,
+      "route": "/app/settings",
+      "horizontal_overflow": false,
+      "title": "Kontracts - Your work, beautifully organized."
+    },
+    {
+      "width": 390,
+      "route": "/book/northline",
+      "horizontal_overflow": false,
+      "title": "Northline Auto Care | Book a detail"
+    }
+  ]
+}
