@@ -62,7 +62,10 @@ def test_subscription_checkout_binds_account_and_is_reused(owner,monkeypatch):
         seen.append(path)
         if path.startswith('/prices/'):
             return {'status':'active','unit_price':{'amount':'4900','currency_code':'USD'},'billing_cycle':{'interval':'month','frequency':1}}
-        if path=='/customers':return {'id':'ctm_sample'}
+        if path.startswith('/customers?email='):
+            return []
+        if path == '/customers':
+            return {'id': 'ctm_sample'}
         assert path=='/transactions'
         assert body['custom_data']['shop_id']==shop()['id']
         assert len(body['custom_data']['binding'])>30
