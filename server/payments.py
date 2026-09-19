@@ -30,8 +30,12 @@ def call(base,path,token,body=None,method='POST',square=False,auth_scheme='Beare
             r=client.request(method,base+path,headers=headers,json=body)
     except httpx.HTTPError:
         raise HTTPException(502,'The payment provider could not be reached. Your payment status has not been assumed; please retry safely.')
-    if not 200<=r.status_code<300:
-        raise HTTPException(502,'The payment provider declined this operation. Please check the connection and try again, or contact support.')
+    if not 200 <= r.status_code < 300:
+    print(f"PADDLE ERROR {r.status_code}: {r.text}", flush=True)
+    raise HTTPException(
+        502,
+        f"Paddle error: {r.text}"
+    )
     return r.json() if r.content else {}
 
 def square_token(shop_id):
