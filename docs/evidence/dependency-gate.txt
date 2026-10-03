@@ -1,0 +1,6 @@
+Deployment dependency gate FAILED. Local evaluated versions are not production approval.
+fastapi: expected 0.141.1; installed 0.128.2
+starlette: expected 1.6.0; installed 0.50.0
+cryptography: expected 50.0.1; installed 46.0.4
+python-multipart: expected 0.0.32; installed 0.0.29
+reportlab: expected 5.0.1; installed 4.4.9

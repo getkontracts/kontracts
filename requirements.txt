@@ -1,0 +1,13 @@
+fastapi==0.141.1
+starlette==1.6.0
+uvicorn==0.48.0
+argon2-cffi==25.1.0
+cryptography==50.0.1
+httpx==0.28.1
+Pillow==12.3.0
+python-multipart==0.0.32
+pydantic==2.13.4
+email-validator==2.3.0
+tzdata==2026.2
+PyJWT[crypto]==2.13.0
+reportlab==5.0.1

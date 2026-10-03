@@ -1,0 +1,130 @@
+{
+  "result": "passed",
+  "backend": "real temporary TestClient API and SQLite",
+  "checks": [
+    "City search and saved citywide coverage",
+    "Specific ZIP coverage and independent business profile drafts",
+    "Normal and heavy quote ZIP rejection; optional photo booking; lost upload response is idempotent",
+    "Private owner and customer chat, text escaping, in-app unsent-draft protection",
+    "Customer search, combined history and saved private notes",
+    "Completed job review request and customer submission",
+    "Branded mobile record-payment dialog and explicitly confirmed Venmo receipt",
+    "Payment proof photo does not mark a job paid",
+    "Quote request conversation before any offer or payment",
+    "Referral is separate, and 21 route/viewport layout checks"
+  ],
+  "layouts": [
+    {
+      "width": 320,
+      "route": "/app/customers",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 320,
+      "route": "/app/messages",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 320,
+      "route": "/app/customer-payments",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 320,
+      "route": "/app/settings",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 320,
+      "route": "/app/services",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 320,
+      "route": "/app/billing",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 320,
+      "route": "/book/northline",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/app/customers",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/app/messages",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/app/customer-payments",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/app/settings",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/app/services",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/app/billing",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/book/northline",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/app/customers",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/app/messages",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/app/customer-payments",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/app/settings",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/app/services",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/app/billing",
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/book/northline",
+      "horizontal_overflow": false
+    }
+  ],
+  "page_errors": [],
+  "native_dialogs": [],
+  "limitations": [
+    "No deployed HTTPS, cookie or CSP browser verification",
+    "No real Square/Paddle/email",
+    "Chromium viewport emulation, not a physical camera or iOS Safari"
+  ]
+}

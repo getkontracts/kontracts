@@ -1,0 +1,8 @@
+{$BASE_URL} {
+    encode zstd gzip
+    request_body {
+        max_size 26MB
+    }
+    reverse_proxy app:8000
+    # Private bearer links appear in URL paths: do not enable raw access logs.
+}

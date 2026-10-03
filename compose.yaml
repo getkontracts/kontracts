@@ -1,0 +1,42 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      APP_ENV: production
+      DEMO_MODE: "false"
+      DATA_DIR: /app/data
+      PORT: "8000"
+      TRUSTED_PROXIES: "*"
+      LEGAL_TERMS_PATH: /app/legal/terms.txt
+      LEGAL_PRIVACY_PATH: /app/legal/privacy.txt
+    volumes:
+      - app_data:/app/data
+      - ./legal:/app/legal:ro
+    # No public app port: only Caddy may forward client traffic.
+    expose:
+      - "8000"
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    depends_on:
+      app:
+        condition: service_healthy
+    environment:
+      BASE_URL: ${BASE_URL:?Set BASE_URL to your public HTTPS origin}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+volumes:
+  app_data:
+  caddy_data:
+  caddy_config:

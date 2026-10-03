@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+.venv/
+data/
+backups/
+browser-evidence/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+.email-patch-backups/
+*.zip

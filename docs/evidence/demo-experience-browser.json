@@ -1,0 +1,177 @@
+{
+  "result": "passed",
+  "city_edit": "passed",
+  "simulated_chat": "passed",
+  "demo_signup_has_no_account_form": true,
+  "exit_link": "correct real destination; app allows click; test canceled actual navigation",
+  "layouts": [
+    {
+      "route": "/app/customers",
+      "width": 320,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/messages",
+      "width": 320,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/customer-payments",
+      "width": 320,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/billing",
+      "width": 320,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/services",
+      "width": 320,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/setup",
+      "width": 320,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/help",
+      "width": 320,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/settings",
+      "width": 320,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/terms",
+      "width": 320,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/privacy",
+      "width": 320,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/register",
+      "width": 320,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/customers",
+      "width": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/messages",
+      "width": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/customer-payments",
+      "width": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/billing",
+      "width": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/services",
+      "width": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/setup",
+      "width": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/help",
+      "width": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/settings",
+      "width": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/terms",
+      "width": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/privacy",
+      "width": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/register",
+      "width": 390,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/customers",
+      "width": 1440,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/messages",
+      "width": 1440,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/customer-payments",
+      "width": 1440,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/billing",
+      "width": 1440,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/services",
+      "width": 1440,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/setup",
+      "width": 1440,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/help",
+      "width": 1440,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/app/settings",
+      "width": 1440,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/terms",
+      "width": 1440,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/privacy",
+      "width": 1440,
+      "horizontal_overflow": false
+    },
+    {
+      "route": "/register",
+      "width": 1440,
+      "horizontal_overflow": false
+    }
+  ],
+  "page_errors": [],
+  "hyphenated_display_words": {},
+  "limitations": "In-memory demo, not live payment/account creation; Chromium viewport emulation only"
+}
